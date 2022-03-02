@@ -6,11 +6,11 @@ public class zadan2 {
 		int n = arg.length;
 		if (n > 0)
 	    {
-	    	System.out.println("вы ввели " + n + " параметров");
+	    	System.out.println("You have entered " + n + " parameters");
 	    	}
 	    else
 	    {
-	    	System.out.println("вы не передавали параметров!");
+	    	System.out.println("Yuo didn't pass parameters");
 	    	}
 	   }
 	}
