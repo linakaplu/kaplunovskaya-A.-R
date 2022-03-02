@@ -1,14 +1,12 @@
 package zadan3;
 
 public class zadan3 {
-	public class Test {
 		public static void main(String[] args) {
 			if (args.length != 2) {
-				System.out.println("Неверное количество параметров");
+				System.out.println("ГЌГҐГўГҐГ°Г­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ Г°Г Г¬ГҐГІГ°Г®Гў");
 				return;
 				}
 			System.out.println(args[0] + " + " + args[1] + " = " + (Integer.parseInt(args[0]) + Integer.parseInt(args[1])));
-			}
-		}
+			}		
 
 }
