@@ -29,11 +29,11 @@ public class zad4 {
                 if (A[i][j] != 0) {
                     System.out.println(A[i][j]); }
             }
-        }
+            }
                 System.out.println("количество: " + k);
                 System.out.println("сумма: " + summa);
                 srednee = summa / k;
                 System.out.println(" Среднее арифметическое: " + srednee);
             }
-        }
+            }
 
