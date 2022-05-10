@@ -7,17 +7,17 @@ import java.lang.Math;      //библиотека для рандома
 public class zad1 {
     public static void main (String args[]) {
 
-        int k = 0;                                      //счетчик изменения знака
-        int t = 0;                                      //счетчик НЕизменения знака
+        int k = 0;                                     
+        int t = 0;                                      
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите размер массива");      //ввод с консоли размера массива n
-        int n = sc.nextInt();                       // размер массива
+        System.out.println("Введите размер массива");      
+        int n = sc.nextInt();                       
         System.out.println("Размер массива: " + n);
         sc.close();
         
         int[] a = new int [n];
-        for (int i = 0; i < n; i++){                //заполнение массива рандомными значениями
+        for (int i = 0; i < n; i++){                
             a[i] = (int) (-10 + Math.random() *50);
         }
 
@@ -28,18 +28,11 @@ public class zad1 {
         System.out.println(" ");
 
         for (int i = 0; i < (n - 1); i++){
-            if ((a[i] >= 0 && a[i + 1] >= 0) | (a[i] <0 && a[i + 1] < 0)) {     //условие для основного вопроса задачи
-                t++;
-            }
+            if ((a[i] >= 0 && a[i + 1] >= 0) | (a[i] <0 && a[i + 1] < 0)) {     
+                t++; }
             else{
-                k++;
-            }
+                k++; }
         }
-
-       /* for (int i = 0; i < (n - 1); i++){
-            if ((a[i] >= 0 && a[i + 1] < 0) | (a[i] < 0 && a[i + 1] >= 0));
-            k++;
-        }*/
 
         System.out.println(k + " раз менялся знак в массиве");      
         System.out.println(t + " раз не менялся знак в массиве");
