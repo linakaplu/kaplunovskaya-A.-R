@@ -1,0 +1,3 @@
+interface ProjectItem {
+    void display();
+}
